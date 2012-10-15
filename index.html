@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Time to get down</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+</head>
+
+<body class="home" style="background-color:#353434;margin:0;padding:0">
+
+	<canvas id="circles" width="350" height="450"></canvas>
+
+	<script type="text/javascript">
+
+		var c, context, config, requestAnimationFrame;
+
+		c = document.getElementById("circles");
+		context = c.getContext("2d");
+
+		requestAnimationFrame = window.requestAnimationFrame ||
+								window.webkitRequestAnimationFrame ||
+								window.mozRequestAnimationFrame;
+
+		config = {
+			'position1' : {
+				'center' : {
+					'x' : 110,
+					'y'	: 50
+				},
+				'circles' : [
+					{
+						'radius'	: 200,
+						'start'		: 0.5,
+						'stop'		: 2,
+						'line'		: true,
+						'rotate'	: true,
+						'colour'	: '#fe9114'
+					},
+					{
+						'radius'	: 90,
+						'start'		: 0,
+						'stop'		: 2,
+						'colour'	: '#353434'
+					},
+					{
+						'radius'	: 65,
+						'start'		: 0,
+						'stop'		: 2,
+						'colour'	: '#CA222E'
+					}
+				]
+			},
+			'position2' : {
+				'center' : {
+					'x' : 140,
+					'y'	: 300
+				},
+				'circles' : [
+					{
+						'radius'	: 120,
+						'start'		: -0.5,
+						'stop'		: 1,
+						'line'		: true,
+						'rotate'	: true,
+						'colour'	: '#CA222E'
+					},
+					{
+						'radius'	: 55,
+						'start'		: -0.5,
+						'stop'		: 1,
+						'line'		: true,
+						'colour'	: '#353434'
+					},
+					{
+						'radius'	: 40,
+						'start'		: 0,
+						'stop'		: 2,
+						'colour'	: '#fe9114'
+					}
+				]
+			}
+		};
+
+		function redraw () {
+
+		};
+
+		function draw () {
+
+			var radians, rotate, center, circle, pie = Math.PI;
+
+			for (position in config) {
+
+				//set circle center
+				center = config[position].center;
+
+				for (circle in config[position].circles) {
+
+					//set this iteration circle
+					circle = config[position].circles[circle];
+					context.beginPath();
+					context.fillStyle = circle.colour;
+
+					context.arc(center.x, center.y, circle.radius, circle.start * pie, circle.stop * pie);
+					
+					//this is for segment missing
+					if (circle.line) context.lineTo(center.x, center.y);
+
+					//draw the circle
+					context.fill();
+				}
+			}
+		};
+
+		draw();
+
+	</script>
+
+</body>
+</html>
