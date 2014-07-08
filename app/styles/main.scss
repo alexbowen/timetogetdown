@@ -1,0 +1,17 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body {
+  background-color:#353434
+}
+
+canvas {
+  position:absolute;
+  top:50px;
+  left:0
+}
+
+header {
+
+}
