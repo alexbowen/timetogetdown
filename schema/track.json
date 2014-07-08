@@ -1,0 +1,18 @@
+{
+    "artist" : "",
+    "title" : "",
+    "label" : "",
+    "tracklist" : [
+        {
+            "name" : "",
+            "remixer" : ""
+        },
+        {
+            "name" : "",
+            "remixer" : ""
+        }
+    ],
+    "released" : "",
+    "image" : ""
+
+}
