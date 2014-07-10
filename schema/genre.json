@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "disco",
+        "type" : "genre"
+    },
+    {
+        "name" : "funk",
+        "type" : "genre"
+    },
+    {
+        "name" : "soul",
+        "type" : "genre"
+    },
+    {
+        "name" : "latin",
+        "type" : "genre"
+    },
+    {
+        "name" : "javascript",
+        "type" : "technology"
+    }
+]

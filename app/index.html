@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/main.css -->
+    <!-- build:css({.tmp,app}) styles/main.scss -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
@@ -35,13 +35,25 @@
                 </button>
 
             </div>
-            <div class="navbar-collapse collapse navbar-inverse-collapse navbar-right">
+            <div class="navbar-collapse collapse navbar-inverse-collapse navbar-right" ng-controller="MenuCtrl">
                 <ul class="nav navbar-nav">
                     <li dropdown>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Disco</a></li>
-                            <li><a href="#">Another action</a></li>
+                            <li ng-repeat="genre in genres"><a ng-href="/{{genre}}" ng-bind="genre"></a></li>
+                        </ul>
+                    </li>
+                    <li dropdown>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="tech in technology"><a ng-href="/{{tech}}" ng-bind="tech"></a></li>
+                        </ul>
+                    </li>
+                    <li class="active" dropdown>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Dropdown header</li>
@@ -49,18 +61,6 @@
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
-                    <li class="active" dropdown>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Disco</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Dropdown header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
                 <form class="navbar-form navbar-right">
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
@@ -72,7 +72,7 @@
 
 
     <!-- Add your site or application content here -->
-    <div ng-view></div>
+    <div ng-view class="page-container"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
