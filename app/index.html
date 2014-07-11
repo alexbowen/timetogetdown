@@ -22,174 +22,61 @@
   </head>
   <body ng-app="timetogetdownApp" class="homepage">
 
-    <canvas id="circles" width="350" height="450"></canvas>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
 
-    <header>
-        <div class="navbar navbar-inverse">
-            <a class="navbar-brand" href="#">Time To Get Down</a>
-            <div class="navbar-header navbar-right">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+      <header></header>
 
-            </div>
-            <div class="navbar-collapse collapse navbar-inverse-collapse navbar-right" ng-controller="MenuCtrl">
-                <ul class="nav navbar-nav">
-                    <li dropdown>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li ng-repeat="genre in genres"><a ng-href="/{{genre}}" ng-bind="genre"></a></li>
-                        </ul>
-                    </li>
-                    <li dropdown>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li ng-repeat="tech in technology"><a ng-href="/{{tech}}" ng-bind="tech"></a></li>
-                        </ul>
-                    </li>
-                    <li class="active" dropdown>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Dropdown header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control col-lg-8" placeholder="Search">
-                </form>
-            </div>
-        </div>
-    </header>
+      <div class="navbar navbar-inverse" id="nav">
+          <a class="navbar-brand" href="#">Time To Get Down</a>
+          <div class="navbar-header navbar-right">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+          </div>
+          <div class="navbar-collapse collapse navbar-inverse-collapse navbar-right" ng-controller="MenuCtrl">
+              <ul class="nav navbar-nav">
+                  <li dropdown>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Music <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li ng-repeat="genre in genres"><a ng-href="/{{genre}}" ng-bind="genre"></a></li>
+                      </ul>
+                  </li>
+                  <li dropdown>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Code <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li ng-repeat="tech in technology"><a ng-href="/{{tech}}" ng-bind="tech"></a></li>
+                      </ul>
+                  </li>
+                  <li class="active" dropdown>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Dropdown header</li>
+                          <li><a href="#">Separated link</a></li>
+                          <li><a href="#">One more separated link</a></li>
+                      </ul>
+                  </li>
+              </ul>
+              <form class="navbar-form navbar-right">
+                  <input type="text" class="form-control col-lg-8" placeholder="Search">
+              </form>
+          </div>
+      </div>
+
+
+
 
 
 
     <!-- Add your site or application content here -->
     <div ng-view class="page-container"></div>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
-      <script type="text/javascript">
-
-    var c, context, config, requestAnimationFrame;
-
-    c = document.getElementById("circles");
-    context = c.getContext("2d");
-
-    requestAnimationFrame = window.requestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.mozRequestAnimationFrame;
-
-    config = {
-      'position1' : {
-        'center' : {
-          'x' : 110,
-          'y' : 50
-        },
-        'circles' : [
-          {
-            'radius'  : 200,
-            'start'   : 0.5,
-            'stop'    : 2,
-            'line'    : true,
-            'rotate'  : true,
-            'colour'  : '#fe9114'
-          },
-          {
-            'radius'  : 90,
-            'start'   : 0,
-            'stop'    : 2,
-            'colour'  : '#353434'
-          },
-          {
-            'radius'  : 65,
-            'start'   : 0,
-            'stop'    : 2,
-            'colour'  : '#CA222E'
-          }
-        ]
-      },
-      'position2' : {
-        'center' : {
-          'x' : 140,
-          'y' : 300
-        },
-        'circles' : [
-          {
-            'radius'  : 120,
-            'start'   : -0.5,
-            'stop'    : 1,
-            'line'    : true,
-            'rotate'  : true,
-            'colour'  : '#CA222E'
-          },
-          {
-            'radius'  : 55,
-            'start'   : -0.5,
-            'stop'    : 1,
-            'line'    : true,
-            'colour'  : '#353434'
-          },
-          {
-            'radius'  : 40,
-            'start'   : 0,
-            'stop'    : 2,
-            'colour'  : '#fe9114'
-          }
-        ]
-      }
-    };
-
-    function redraw () {
-
-    };
-
-    function draw () {
-
-      var radians, rotate, center, circle, pie = Math.PI;
-
-      for (position in config) {
-
-        //set circle center
-        center = config[position].center;
-
-        for (circle in config[position].circles) {
-
-          //set this iteration circle
-          circle = config[position].circles[circle];
-          context.beginPath();
-          context.fillStyle = circle.colour;
-
-          context.arc(center.x, center.y, circle.radius, circle.start * pie, circle.stop * pie);
-
-          //this is for segment missing
-          if (circle.line) context.lineTo(center.x, center.y);
-
-          //draw the circle
-          context.fill();
-        }
-      }
-    };
-
-    draw();
-
-  </script>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -198,5 +85,9 @@
 
 
     <script src="bower_components/requirejs/require.js" data-main="scripts/main.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="scripts/lib/bootstrap.min.js"></script>
+    <script src="scripts/lib/scripts.js"></script>
   </body>
 </html>

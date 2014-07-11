@@ -6,8 +6,7 @@ require.config({
     'angular-mocks'    : '../bower_components/angular-mocks/angular-mocks',
     'angular-cookies': '../bower_components/angular-cookies/angular-cookies',
     'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize',
-    'angular-resource': '../bower_components/angular-resource/angular-resource',
-    'ui-bootstrap': '../bower_components/angular-bootstrap/ui-bootstrap'
+    'angular-resource': '../bower_components/angular-resource/angular-resource'
   },
   shim: {
     'angular' : {'exports' : 'angular'},
@@ -15,7 +14,7 @@ require.config({
     'angular-cookies': ['angular'],
     'angular-sanitize': ['angular'],
     'angular-resource': ['angular'],
-    'ui-bootstrap': ['angular'],
+
     'angular-mocks': {
       deps: ['angular'],
       'exports': 'angular.mock'
@@ -34,8 +33,7 @@ require([
   'app',
   'angular-route',
   'angular-sanitize',
-  'angular-resource',
-  'ui-bootstrap'
+  'angular-resource'
 ], function(angular, app, ngRoutes, ngSanitize, ngResource) {
   'use strict';
   /* jshint ignore:start */

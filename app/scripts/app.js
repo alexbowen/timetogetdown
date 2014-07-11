@@ -11,8 +11,7 @@ define(['angular', 'controllers/main', 'controllers/menu', 'controllers/route']/
 /*angJSDeps*/
     'ngResource',
     'ngSanitize',
-    'ngRoute',
-    'ui.bootstrap'
+    'ngRoute'
 ])
     .config(function ($routeProvider, $locationProvider) {
 

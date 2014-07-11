@@ -1,1 +1,128 @@
-<h3 ng-bind="page.name"></h3>
+<canvas id="circles" width="350" height="450"></canvas>
+
+<div class="container-fluid inner-page">
+
+    <section class="left-side-bar"></section>
+
+    <section class="content">
+        <h1 ng-bind="page.name"></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac dapibus justo, eget adipiscing augue. Maecenas fringilla dolor ac justo cursus accumsan. Sed sed dui vel neque faucibus dapibus. Sed purus ligula, fringilla ac velit vel, dapibus elementum tellus. Vestibulum ac tortor eu ligula mollis viverra quis in felis. Proin mollis et neque eget placerat. Curabitur nec ligula eu dui consequat consequat. Aenean ac nulla dictum, sollicitudin nisl nec, tristique purus. Mauris vitae leo id augue sagittis consequat. Maecenas iaculis lorem eget nisi rutrum tempor eget nec tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent auctor ut enim ac euismod.</p>
+
+        <p>Sed dapibus ullamcorper iaculis. Nullam ut odio sed sem pharetra bibendum hendrerit interdum mi. In eget volutpat est, quis luctus mi. Nam auctor eu est sit amet viverra. Fusce volutpat, elit sed rutrum tempor, tortor mi varius sem, sit amet condimentum enim libero ut nulla. Nam venenatis euismod diam. Pellentesque elit sapien, lacinia id malesuada vitae, iaculis mattis tortor.</p>
+    </section>
+
+    <section class="right-side-bar">
+        <ul>
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+            <li><a href="#">link 3</a></li>
+        </ul>
+    </section>
+
+</div>
+
+<script type="text/javascript">
+
+var c, context, config, requestAnimationFrame;
+
+c = document.getElementById("circles");
+context = c.getContext("2d");
+
+requestAnimationFrame = window.requestAnimationFrame ||
+window.webkitRequestAnimationFrame ||
+window.mozRequestAnimationFrame;
+
+config = {
+'position1' : {
+'center' : {
+'x' : 110,
+'y' : 50
+},
+'circles' : [
+{
+'radius'  : 200,
+'start'   : 0.5,
+'stop'    : 2,
+'line'    : true,
+'rotate'  : true,
+'colour'  : '#fe9114'
+},
+{
+'radius'  : 90,
+'start'   : 0,
+'stop'    : 2,
+'colour'  : '#353434'
+},
+{
+'radius'  : 65,
+'start'   : 0,
+'stop'    : 2,
+'colour'  : '#CA222E'
+}
+]
+},
+'position2' : {
+'center' : {
+'x' : 140,
+'y' : 300
+},
+'circles' : [
+{
+'radius'  : 120,
+'start'   : -0.5,
+'stop'    : 1,
+'line'    : true,
+'rotate'  : true,
+'colour'  : '#CA222E'
+},
+{
+'radius'  : 55,
+'start'   : -0.5,
+'stop'    : 1,
+'line'    : true,
+'colour'  : '#353434'
+},
+{
+'radius'  : 40,
+'start'   : 0,
+'stop'    : 2,
+'colour'  : '#fe9114'
+}
+]
+}
+};
+
+function redraw () {
+
+};
+
+function draw () {
+
+var radians, rotate, center, circle, pie = Math.PI;
+
+for (position in config) {
+
+//set circle center
+center = config[position].center;
+
+for (circle in config[position].circles) {
+
+//set this iteration circle
+circle = config[position].circles[circle];
+context.beginPath();
+context.fillStyle = circle.colour;
+
+context.arc(center.x, center.y, circle.radius, circle.start * pie, circle.stop * pie);
+
+//this is for segment missing
+if (circle.line) context.lineTo(center.x, center.y);
+
+//draw the circle
+context.fill();
+}
+}
+};
+
+draw();
+
+</script>
