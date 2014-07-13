@@ -18,9 +18,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
+      <script src="./scripts/components/platform/platform.js"></script>
+      <link rel="import" href="./scripts/components/my-element/social.html">
 
+
+      <style>.operative { font-weight: bold; border:1px solid yellow }</style>
   </head>
-  <body ng-app="timetogetdownApp" class="homepage">
+  <body ng-app="timetogetdownApp" class="homepage" unresolved>
 
   <!-- Wrap all page content here -->
   <div id="wrap">
@@ -70,11 +74,6 @@
           </div>
       </div>
 
-
-
-
-
-
     <!-- Add your site or application content here -->
     <div ng-view class="page-container"></div>
 
@@ -82,7 +81,6 @@
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
-
 
     <script src="bower_components/requirejs/require.js" data-main="scripts/main.js"></script>
 

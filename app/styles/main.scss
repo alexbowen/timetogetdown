@@ -338,11 +338,12 @@ h1 {
 }
 
 .inner-page .left-side-bar {
-  left:0
+  left:0;
 }
 
 .inner-page .right-side-bar {
-  right:0
+  right:0;
+  padding:40px
 }
 
 .inner-page .content {
@@ -353,6 +354,12 @@ h1 {
 
 .panel-body p {
   color:#000000
+}
+
+.prettyprint {
+  padding: 10px;
+  width: 90%;
+  margin: 40px auto 40px 20px;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);

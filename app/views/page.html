@@ -9,17 +9,75 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac dapibus justo, eget adipiscing augue. Maecenas fringilla dolor ac justo cursus accumsan. Sed sed dui vel neque faucibus dapibus. Sed purus ligula, fringilla ac velit vel, dapibus elementum tellus. Vestibulum ac tortor eu ligula mollis viverra quis in felis. Proin mollis et neque eget placerat. Curabitur nec ligula eu dui consequat consequat. Aenean ac nulla dictum, sollicitudin nisl nec, tristique purus. Mauris vitae leo id augue sagittis consequat. Maecenas iaculis lorem eget nisi rutrum tempor eget nec tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent auctor ut enim ac euismod.</p>
 
         <p>Sed dapibus ullamcorper iaculis. Nullam ut odio sed sem pharetra bibendum hendrerit interdum mi. In eget volutpat est, quis luctus mi. Nam auctor eu est sit amet viverra. Fusce volutpat, elit sed rutrum tempor, tortor mi varius sem, sit amet condimentum enim libero ut nulla. Nam venenatis euismod diam. Pellentesque elit sapien, lacinia id malesuada vitae, iaculis mattis tortor.</p>
+
+        <?prettify lang=javascript skin=sons-of-obsidian linenums=true?>
+        <pre class="prettyprint">
+var express = require('express');
+var app = express();
+var MongoClient = require('mongodb').MongoClient;
+var format = require('util').format;
+
+app.get('/api/:type', function(req, res){
+
+  MongoClient.connect('mongodb://127.0.0.1:27017/ttgd', function(err, db) {
+
+      if(err) throw err;
+
+      var collection = db.collection('ttgd');
+
+      // Locate all the entries using find
+      collection.find({type:req.param('type')}).toArray(function(err, results) {
+
+        res.header('Access-Control-Allow-Origin', "*");
+          res.send(results);
+
+          db.close();
+      });
+  });
+});
+
+var server = app.listen(3000, function() {
+    console.log('Listening on port %d', server.address().port);
+});
+        </pre>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac dapibus justo, eget adipiscing augue. Maecenas fringilla dolor ac justo cursus accumsan. Sed sed dui vel neque faucibus dapibus. Sed purus ligula, fringilla ac velit vel, dapibus elementum tellus. Vestibulum ac tortor eu ligula mollis viverra quis in felis. Proin mollis et neque eget placerat. Curabitur nec ligula eu dui consequat consequat. Aenean ac nulla dictum, sollicitudin nisl nec, tristique purus. Mauris vitae leo id augue sagittis consequat. Maecenas iaculis lorem eget nisi rutrum tempor eget nec tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent auctor ut enim ac euismod.</p>
+
+        <p>Sed dapibus ullamcorper iaculis. Nullam ut odio sed sem pharetra bibendum hendrerit interdum mi. In eget volutpat est, quis luctus mi. Nam auctor eu est sit amet viverra. Fusce volutpat, elit sed rutrum tempor, tortor mi varius sem, sit amet condimentum enim libero ut nulla. Nam venenatis euismod diam. Pellentesque elit sapien, lacinia id malesuada vitae, iaculis mattis tortor.</p>
+
+
     </section>
 
     <section class="right-side-bar">
-        <ul>
-            <li><a href="#">link 1</a></li>
-            <li><a href="#">link 2</a></li>
-            <li><a href="#">link 3</a></li>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                <a href="#">
+                    link 1
+                </a>
+            </li>
+
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                <a href="#">
+                    link 2
+                </a>
+            </li>
+
+            <li class="list-group-item">
+                <span class="badge">14</span>
+                <a href="#">
+                    link 3
+                </a>
+            </li>
         </ul>
     </section>
 
 </div>
+
+<script>
+    require(['pretty-print'], function () {});
+</script>
 
 <script type="text/javascript">
 
