@@ -14,7 +14,7 @@ require.config({
     'angular-cookies': ['angular'],
     'angular-sanitize': ['angular'],
     'angular-resource': ['angular'],
-
+    'pretty-print' : ['https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&skin=sons-of-obsidian'],
     'angular-mocks': {
       deps: ['angular'],
       'exports': 'angular.mock'
