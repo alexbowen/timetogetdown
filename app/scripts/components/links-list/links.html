@@ -1,0 +1,61 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../components/core-ajax/core-ajax.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <image-links></image-links>
+
+@element links-list
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://alexbowen.github.io/image-links
+-->
+<polymer-element name="image-links" attributes="axis data width">
+
+    <template>
+
+        <link rel="stylesheet" href="links.css"/>
+
+        <core-ajax id="ajax"
+                   auto
+                   url="../data/{{data}}.json"
+                   on-core-response="{{linksLoaded}}"
+                   handleAs="json">
+        </core-ajax>
+
+        <content></content>
+
+        <ul class="{{axis}}" style="width:{{width}}">
+            <template repeat="{{link in links}}">
+                <li>
+                    <a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>
+                    <div>
+                        <h4>{{link.title}}</h4>
+                        <p>{{link.description}}<a href="{{link.url}}">read more</a></p>
+                    </div>
+                </li>
+            </template>
+        </ul>
+
+    </template>
+
+    <script>
+
+        Polymer('image-links', {
+            /**
+             * @property links
+             * @type Array
+             */
+            links: [],
+
+            linksLoaded: function () {
+                this.links = this.$.ajax.response.data;
+            }
+        });
+
+    </script>
+
+</polymer-element>
