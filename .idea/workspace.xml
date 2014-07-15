@@ -2,13 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8890d251-0845-4bb5-9459-dc9c6e08ed08" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/social.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/social.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/my-element/social.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/build.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/platform/platform.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/build.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/layout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/polymer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/polymer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/components/polymer/polymer.js.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/links-list/demo.html" afterPath="$PROJECT_DIR$/app/scripts/components/links-list/demo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/links-list/links.css" afterPath="$PROJECT_DIR$/app/scripts/components/links-list/links.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/components/links-list/links.html" afterPath="$PROJECT_DIR$/app/scripts/components/links-list/links.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data/social.json" afterPath="$PROJECT_DIR$/app/data/social.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timetogetdown.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405374051313" ignored="false" />
-    <file path="/index.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405374873757" ignored="false" />
+    <file path="/index.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405408924065" ignored="false" />
     <file path="/main.scss" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405376212646" ignored="false" />
     <file path="/main.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405372004676" ignored="false" />
     <file path="/left-sidebar.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1404828299306" ignored="false" />
@@ -32,9 +63,10 @@
     <file path="/a.dummy" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405059450359" ignored="false" />
     <file path="/scripts.js" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405063152021" ignored="false" />
     <file path="/social.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405105782554" ignored="false" />
-    <file path="/links.css" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405366064044" ignored="false" />
-    <file path="/links.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405365885044" ignored="false" />
+    <file path="/links.css" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405379186288" ignored="false" />
+    <file path="/links.html" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405407162063" ignored="false" />
     <file path="/tech.json" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405365659394" ignored="false" />
+    <file path="/social.json" changelist="8890d251-0845-4bb5-9459-dc9c6e08ed08" time="1405407043386" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +139,7 @@
       <file leaf-file-name="links.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="636" selection-end="653" vertical-scroll-proportion="0.0">
+            <state line="77" column="23" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +148,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="32" selection-start="5657" selection-end="5657" vertical-scroll-proportion="-21.875">
+            <state line="120" column="35" selection-start="5723" selection-end="5723" vertical-scroll-proportion="-25.625">
               <folding />
             </state>
           </provider>
@@ -125,7 +157,7 @@
       <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="547" selection-end="600" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="548" selection-end="601" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +184,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.37414965">
+            <state line="20" column="57" selection-start="970" selection-end="970" vertical-scroll-proportion="0.34013605">
               <folding />
             </state>
           </provider>
@@ -161,16 +193,18 @@
       <file leaf-file-name="links.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1005" selection-end="1140" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="34" column="86" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-21.25">
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#template#0;n#polymer-element#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tech.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/data/tech.json">
+      <file leaf-file-name="social.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/data/social.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+            <state line="24" column="30" selection-start="694" selection-end="694" vertical-scroll-proportion="-15.0">
               <folding />
             </state>
           </provider>
@@ -194,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/app/styles/elements.scss" />
         <option value="$PROJECT_DIR$/app/styles/variables.scss" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
@@ -205,10 +238,11 @@
         <option value="$PROJECT_DIR$/app/scripts/main.js" />
         <option value="$PROJECT_DIR$/app/views/page.html" />
         <option value="$PROJECT_DIR$/app/data/tech.json" />
-        <option value="$PROJECT_DIR$/app/scripts/components/links-list/links.html" />
-        <option value="$PROJECT_DIR$/app/scripts/components/links-list/links.css" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/scripts/components/links-list/links.css" />
+        <option value="$PROJECT_DIR$/app/data/social.json" />
+        <option value="$PROJECT_DIR$/app/scripts/components/links-list/links.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
@@ -406,6 +440,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetogetdown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="timetogetdown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -475,11 +535,15 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
@@ -612,7 +676,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1054" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -631,7 +695,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15581644" sideWeight="0.6605996" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15581644" sideWeight="0.6605996" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -701,21 +765,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="29" selection-start="327" selection-end="327" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/components/polymer/build.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/lib/scripts.js">
@@ -728,11 +782,6 @@
         <state line="13" column="13" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/components/my-element/social.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="81" selection-end="116" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="20" selection-start="4427" selection-end="4433" vertical-scroll-proportion="0.0">
@@ -742,47 +791,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="547" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/data/tech.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1005" selection-end="1140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="636" selection-end="653" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="548" selection-end="601" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-23.255209" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-23.255209">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="12" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="32" selection-start="5657" selection-end="5657" vertical-scroll-proportion="-21.875">
           <folding />
         </state>
       </provider>
@@ -794,9 +817,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/tech.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="544" selection-end="544" vertical-scroll-proportion="0.27210885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="35" selection-start="5723" selection-end="5723" vertical-scroll-proportion="-25.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="23" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/data/social.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="694" selection-end="694" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/components/links-list/links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="86" selection-start="1052" selection-end="1052" vertical-scroll-proportion="-21.25">
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#template#0;n#polymer-element#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.37414965">
+        <state line="20" column="57" selection-start="970" selection-end="970" vertical-scroll-proportion="0.34013605">
           <folding />
         </state>
       </provider>

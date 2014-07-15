@@ -2,14 +2,13 @@
 <link rel="import" href="../components/core-ajax/core-ajax.html">
 
 <!--
-Element providing solution to no problem in particular.
+Element providing a list of image based links with optional description.
 
 ##### Example
 
     <image-links></image-links>
 
 @element links-list
-@blurb Element providing solution to no problem in particular.
 @status alpha
 @homepage http://alexbowen.github.io/image-links
 -->
@@ -29,12 +28,12 @@ Element providing solution to no problem in particular.
         <content></content>
 
         <ul class="{{axis}}" style="width:{{width}}">
-            <template repeat="{{link in links}}">
+            <template repeat="{{link in links | sort}}">
                 <li>
                     <a class="{{link.name}}" alt="{{link.name}}" href="{{link.url}}"></a>
                     <div>
-                        <h4>{{link.title}}</h4>
-                        <p>{{link.description}}<a href="{{link.url}}">read more</a></p>
+                        <h4 class="{{ {hidden : axis === 'horizontal'} | tokenList }}">{{link.title}}</h4>
+                        <p>{{link.description}}<a class="{{ {hidden : axis === 'horizontal'} | tokenList }}" href="{{link.url}}">read more</a></p>
                     </div>
                 </li>
             </template>
@@ -53,6 +52,16 @@ Element providing solution to no problem in particular.
 
             linksLoaded: function () {
                 this.links = this.$.ajax.response.data;
+            },
+
+            sort: function(items) {
+                items.sort(function (a, b) {
+                    var titleA = a.title.toLowerCase(), titleB = b.title.toLowerCase();
+                    if (titleA < titleB)  return -1;
+                    if (titleA > titleB) return 1;
+                    return 0;
+                });
+                return items;
             }
         });
 

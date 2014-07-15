@@ -34,6 +34,10 @@ li > a {
     opacity:0.8
 }
 
+li a:hover {
+    opacity:1
+}
+
 li h4 {
     margin:0
 }
@@ -51,14 +55,14 @@ li p a {
     color:#fe9114
 }
 
+.hidden {
+    display:none
+}
+
+/* axis styles */
 .vertical li {
     display:block;
     margin:20px 0
-}
-
-/* temp style to hide read more links */
-.horizontal li p a {
-    display:none
 }
 
 .column li {
@@ -71,10 +75,7 @@ li p a {
     clear:left
 }
 
-li a:hover {
-    opacity:1
-}
-
+/* background images */
 
 .github {
     background-position : 0 0;

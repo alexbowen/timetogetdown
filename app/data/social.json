@@ -2,22 +2,27 @@
     "data" : [
         {
             "name" : "github",
+            "title" : "Github",
             "url" : "https://github.com/alexbowen"
         },
         {
             "name" : "linked",
+            "title" : "Linked in",
             "url" : "https://www.linkedin.com/profile/view?id=96726452"
         },
         {
             "name" : "stack",
+            "title" : "Stack Overflow",
             "url" : "http://stackoverflow.com/users/1567176/alfonsob"
         },
         {
             "name" : "gplus",
+            "title" : "Google+",
             "url" : "https://plus.google.com/+AlexBowen123/about"
         },
         {
             "name" : "twitter",
+            "title" : "Twitter",
             "url" : "https://twitter.com/alfonsob8"
         }
     ]
